@@ -24,7 +24,7 @@
   list-style: none;
 }
 
-.header__link-active {
+.header-link_active {
   text-decoration: none;
 }
 
@@ -44,10 +44,9 @@
   
 }
 
-.address__links-list {
-  list-style: none;
+
+.address__link {
   text-decoration: underline;
-  
 }
 
 .cover {
@@ -71,8 +70,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 0;
-    left: 0;
+    inset: 0;
     z-index: -1;
 }
 
@@ -279,15 +277,16 @@
   list-style: none;
 }
 
-.footer__adress {
+.footer__address {
   justify-self: start;
   font-size: 18px;
   line-height: 1.28;
 }
 
-.adress__text-city {
+.address__text-city {
   width: 250px;
-  letter-spacing: 1;
+  /* letter-spacing: 0.2px; 
+  посмотрел в pixel perfect и понял что свойство letter-spacing - не нужно */
 }
 
 .footer__menu {
@@ -299,6 +298,10 @@
 
 .footer__menu-link {
   text-decoration: underline;
+}
+
+.footer-menu-link_active {
+  text-decoration: none;
 }
 
 .footer__social-list {
